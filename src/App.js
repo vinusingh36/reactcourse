@@ -49,6 +49,10 @@ export default App;
 //  <Counter count={count} setCount={setCount} setName={setName} name={name} />
 //       <Counter count={count} setCount={setCount} setName={setName} name={name} /> */}
 
+//  <Counter count={count} setCount={setCount} setName={setName} name={name} />
+//       <Counter count={count} setCount={setCount} setName={setName} name={name} /> */}
+
+
 
 //       <Tech />
 //       <A />
