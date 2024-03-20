@@ -46,6 +46,9 @@ export default App;
 // const [count, setCount] = useState(0);
 // const [name, setName] = useState("vineet");
 
+// const [count, setCount] = useState(0);
+// const [name, setName] = useState("vineet");
+
 //  <Counter count={count} setCount={setCount} setName={setName} name={name} />
 //       <Counter count={count} setCount={setCount} setName={setName} name={name} /> */}
 
