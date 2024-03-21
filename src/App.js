@@ -1,8 +1,7 @@
 import './App.css';
-import { useState } from 'react';
-import Counter from './Components/Counter';
-import Post from './Components/Post';
-import User from './Components/User';
+import User from './Components/Basics/User';
+import Chatapp from './Components/ChatApp/Chatapp';
+import Parent from './Components/Dataflow/Child-Parent/Parent';
 
 
 
@@ -10,7 +9,7 @@ function App() {
 
   return (
     <div className="App" >
-      <User />
+      <Chatapp />
     </div>
 
   );
@@ -20,7 +19,10 @@ function App() {
 export default App;
 
 
+/*
+   <User />
 
+*/
 
 
 // let info = [
