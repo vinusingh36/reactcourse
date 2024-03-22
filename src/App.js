@@ -1,17 +1,24 @@
+import { useState } from 'react';
 import './App.css';
-import User from './Components/Basics/User';
-import Chatapp from './Components/ChatApp/Chatapp';
-import Parent from './Components/Dataflow/Child-Parent/Parent';
+import Image from './Components/LifeCycle/Image';
+import Title from './Components/LifeCycle/Title';
+
 
 
 
 function App() {
+  const [showImg, setShowimg] = useState(true);
 
   return (
     <div className="App" >
-      <Chatapp />
+      <h2>React App</h2>
+      {
+        showImg ? <Image /> : <Title />
+      }
+      <br />
+      <button onClick={() => setShowimg(false)} >Show Title</button>&emsp;
+      <button onClick={() => setShowimg(true)} >Show Image</button>
     </div>
-
   );
 
 }
@@ -21,6 +28,7 @@ export default App;
 
 /*
    <User />
+   <Chatapp />
 
 */
 
