@@ -1,0 +1,14 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "name": "vineet"
+        }
+    ],
+    "prod": [
+        {
+            "id": 12,
+            "name": "vineet"
+        }
+    ]
+}
