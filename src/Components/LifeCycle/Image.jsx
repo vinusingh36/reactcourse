@@ -12,7 +12,10 @@ const Image = () => {
     const [img, setImg] = useState(reactImg);
 
     useEffect(() => {
-        console.log("Use Effect hook is called>>>>>>>>");
+        localStorage.setItem("name", "React Application")
+        return () => {
+            localStorage.removeItem("name")
+        }
     }, [name]);
 
 

@@ -2,22 +2,20 @@ import { useState } from 'react';
 import './App.css';
 import Image from './Components/LifeCycle/Image';
 import Title from './Components/LifeCycle/Title';
+import Products from './Components/LifeCycle/Products';
+import Timer from './Components/Timer/Timer';
+import FormComp from './Components/Timer/FormComp';
 
 
 
 
 function App() {
-  const [showImg, setShowimg] = useState(true);
+  // const [showImg, setShowimg] = useState(true);
 
   return (
     <div className="App" >
-      <h2>React App</h2>
-      {
-        showImg ? <Image /> : <Title />
-      }
-      <br />
-      <button onClick={() => setShowimg(false)} >Show Title</button>&emsp;
-      <button onClick={() => setShowimg(true)} >Show Image</button>
+      {/* <Timer /> */}
+      <FormComp />
     </div>
   );
 
@@ -27,8 +25,24 @@ export default App;
 
 
 /*
+ <h2>React App</h2>
+      {
+        showImg ? <Image /> : <Title />
+      }
+      <br />
+      <button onClick={() => setShowimg(false)} >Show Title</button>&emsp;
+      <button onClick={() => setShowimg(true)} >Show Image</button>
+
+      <Products />
    <User />
    <Chatapp />
+    <h2>React App</h2>
+      {
+        showImg ? <Image /> : <Title />
+      }
+      <br />
+      <button onClick={() => setShowimg(false)} >Show Title</button>&emsp;
+      <button onClick={() => setShowimg(true)} >Show Image</button>
 
 */
 
