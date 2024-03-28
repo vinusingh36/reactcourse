@@ -1,21 +1,25 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import './App.css';
-import Image from './Components/LifeCycle/Image';
-import Title from './Components/LifeCycle/Title';
-import Products from './Components/LifeCycle/Products';
-import Timer from './Components/Timer/Timer';
-import FormComp from './Components/Timer/FormComp';
-
-
+// import Image from './Components/LifeCycle/Image';
+// import Title from './Components/LifeCycle/Title';
+// import Products from './Components/LifeCycle/Products';
+// import Timer from './Components/Timer/Timer';
+// import FormComp from './Components/Timer/FormComp';
+// import A from './Components/Context/A';
+import Navbar from './Components/Navbar/Navbar';
+import Home from './Components/Context/Home';
+import Login from './Components/Context/Login';
+import { AuthContext } from './Components/Context/Auth';
 
 
 function App() {
-  // const [showImg, setShowimg] = useState(true);
 
+  const { loggedIn } = useContext(AuthContext)
   return (
     <div className="App" >
-      {/* <Timer /> */}
-      <FormComp />
+      <Navbar />
+      {loggedIn ? <Login /> : <Home />}
+
     </div>
   );
 
@@ -25,6 +29,8 @@ export default App;
 
 
 /*
+
+ <FormComp />
  <h2>React App</h2>
       {
         showImg ? <Image /> : <Title />
