@@ -1,5 +1,31 @@
 import { useContext, useState } from 'react';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import { AuthContext } from './Components/Context/Auth';
+
+
+import AllRoutes from './Components/AllRoutes/AllRoutes';
+
+function App() {
+
+  const { loggedIn } = useContext(AuthContext);
+  return (
+    <div className="App" >
+      <Navbar />
+      <AllRoutes />
+    </div>
+  );
+
+}
+
+export default App;
+
+
+
+
+
+
+/*
 // import Image from './Components/LifeCycle/Image';
 // import Title from './Components/LifeCycle/Title';
 // import Products from './Components/LifeCycle/Products';
@@ -11,24 +37,9 @@ import Home from './Components/Context/Home';
 import Login from './Components/Context/Login';
 import { AuthContext } from './Components/Context/Auth';
 
-
-function App() {
-
-  const { loggedIn } = useContext(AuthContext)
-  return (
-    <div className="App" >
-      <Navbar />
+ const { loggedIn } = useContext(AuthContext)
+ <Navbar />
       {loggedIn ? <Login /> : <Home />}
-
-    </div>
-  );
-
-}
-
-export default App;
-
-
-/*
 
  <FormComp />
  <h2>React App</h2>
