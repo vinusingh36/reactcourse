@@ -11,11 +11,6 @@ const Login = ({ login }) => {
     const { setIsloggedin } = useContext(AuthContext);
     const Navigate = useNavigate();
 
-
-    useEffect(() => {
-        console.log(process.env.REACT_APP_USERNAME);
-    }, [])
-
     const handleAuth = (e) => {
         e.preventDefault();
         if (user.name === process.env.REACT_APP_USERNAME && user.pass === process.env.REACT_APP_PASSWORD) {
