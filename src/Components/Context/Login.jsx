@@ -46,8 +46,6 @@ const Login = ({ login }) => {
                 <input type="submit" name="" id="" value="Login" />
 
             </form>
-
-            <h2>Adding some text to check Deployment</h2>
         </div>
     )
 }
